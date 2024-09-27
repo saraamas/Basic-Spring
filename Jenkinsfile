@@ -1,10 +1,14 @@
 pipeline {
     agent any
 
+    tools {
+            maven 'maven' // Nom de l'installation Maven dans Jenkins
+        }
+
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/ChakraHs/Basic-Spring.git', branch: 'main'
+                git url: 'https://github.com/saarmas/Basic-Spring.git', branch: 'main'
             }
         }
 
