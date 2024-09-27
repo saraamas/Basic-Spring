@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/saarmas/Basic-Spring.git', branch: 'main'
+                git url: 'https://github.com/saaramas/Basic-Spring.git', branch: 'main'
             }
         }
 
